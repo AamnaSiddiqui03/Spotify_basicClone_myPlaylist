@@ -141,3 +141,21 @@ nav ul li {
 input[type=range]:focus::-ms-fill-upper {
     background: #2497E3;
   }
+  @media (max-width: 710px) {
+  
+    .bottom{
+      height: 160px;
+      display: flex;
+
+    }
+  .songInfo{
+      display: flex;
+      flex-direction: column;
+      gap: 100px;
+    }
+    .songItem {
+      font-size: 11px;
+    }
+    
+  
+  }
