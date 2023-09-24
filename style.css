@@ -138,24 +138,29 @@ nav ul li {
   font-size: 2.5em !important;
 }
 
-input[type=range]:focus::-ms-fill-upper {
-    background: #2497E3;
-  }
-  @media (max-width: 710px) {
+  @media (max-width: 740px) {
+    /* Center-align content on the page */
+    .bottom {
+        
+      display: flex;
+      flex-direction: column; /* Stack items vertically */
+      gap:40px ;
+      justify-content: center;
+      align-items: center; /* Center-align items horizontally */
+      text-align: center; /* Center-align text content within the container */
+    }
   
-    .bottom{
-      height: 160px;
+    .songInfo {
       display: flex;
-
+      margin-left: 16px;
+      text-align: center; /* Center-align text content within the container */
     }
-  .songInfo{
-      display: flex;
-      flex-direction: column;
-      gap: 100px;
-    }
+  
     .songItem {
-      font-size: 11px;
+     
+      font-size: 9px;
+      text-align: center;
     }
-    
   
+    /* You can define additional styles for smaller screens here */
   }
