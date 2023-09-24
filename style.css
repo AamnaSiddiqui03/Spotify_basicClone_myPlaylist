@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+body {
+  background-color: rgb(0, 0, 0);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  font-family: "Ubuntu", sans-serif;
+  position: sticky;
+  top: 0;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  height: 80px;
+  background-color: rgb(9, 71, 79);
+  color: white;
+}
+
+nav ul li {
+  padding: 0 12px;
+}
+.brand img {
+  width: 44px;
+  padding: 0 8px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 1.3rem;
+}
+
+.container {
+  min-height: 50vh;
+  background-color: rgb(9, 71, 79);
+  /* border: 7px dashed  rgb(9, 71, 79); */
+  border: 1px solid  rgb(45, 42, 42);
+  box-shadow: inset 1px 1px 5px rgb(37, 149, 86), inset -1px -1px 7px rgb(29, 15, 140);
+
+
+  color: rgb(9, 71, 79);
+  font-family: "Varela Round", sans-serif;
+  display: flex;
+  margin: 23px auto;
+  width: 76%;
+  border-radius: 9px;
+  padding: 34px;
+  background-image: url("covers/bg.jpg");
+}
+
+.bottom {
+  position: sticky;
+  bottom: 0;
+  height: 95px;
+  background-color: rgb(0, 6, 6);
+  color: rgb(192, 201, 192);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.icons {
+  margin-top: 14px;
+}
+.icons i {
+  cursor: pointer;
+}
+
+#myProgressBar {
+  width: 80vw;
+  cursor: pointer;
+  accent-color: rgb(168, 175, 167);
+  /* accent-color:rgb(255, 255, 255); */
+
+}
+
+
+  
+
+.songItemContainer {
+  margin-top: 74px;
+}
+
+.songItem {
+  height: 50px;
+  display: flex;
+  background-color: rgb(3, 24, 27);
+
+  color: rgb(109, 144, 101);
+  margin: 12px 0;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 34px;
+}
+.songItem:hover{
+    background-color: rgb(67, 75, 60);
+}
+
+.songItem img {
+  width: 45px;
+  height: 45px;
+  margin: 0 23px;
+  border-radius: 34px;
+}
+
+.timestamp {
+  margin: 0 23px;
+}
+
+.timestamp i {
+  cursor: pointer;
+}
+.songInfo {
+  position: absolute;
+  left: 10vw;
+  font-family: "Varela Round", sans-serif;
+}
+
+.songInfo img {
+  opacity: 0;
+  transition: opacity 0.4s ease-in;
+}
+.durationstamp {
+  margin-right: 10px;
+}
+.fa-3x {
+  font-size: 2.5em !important;
+}
+
+input[type=range]:focus::-ms-fill-upper {
+    background: #2497E3;
+  }
